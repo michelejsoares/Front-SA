@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gráfico de Barra com CSS</title>
+<style>
+    .barra {
+        width: 300px; /* largura total do gráfico */
+        height: 20px; /* altura das barras */
+        margin-bottom: 10px; /* espaço entre as barras */
+        position: relative; /* para posicionar o texto dentro das barras */
+    }
+
+    .barra .parte {
+        position: absolute;
+        height: 100%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        color: white;
+    }
+
+    .barra .parte.part1 {
+        width: 30%; /* largura da primeira parte (30% da largura total) */
+        background-color: #4CAF50; /* cor da primeira parte */
+    }
+
+    .barra .parte.part2 {
+        width: 40%; /* largura da segunda parte (40% da largura total) */
+        left: 30%; /* posição da segunda parte */
+        background-color: #2196F3; /* cor da segunda parte */
+    }
+
+    .barra .parte.part3 {
+        width: 30%; /* largura da terceira parte (30% da largura total) */
+        left: 70%; /* posição da terceira parte */
+        background-color: #f44336; /* cor da terceira parte */
+    }
+</style>
+</head>
+<body>
+
+<div class="barra">
+    <div class="parte part1">30%</div>
+    <div class="parte part2">40%</div>
+    <div class="parte part3">30%</div>
+</div>
+
+</body>
+</html>
